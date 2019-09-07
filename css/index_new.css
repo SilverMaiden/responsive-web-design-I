@@ -179,19 +179,20 @@ body {
 
 header nav {
   display: flex;
+  text-align: center;
   flex-flow: column nowrap;
   vertical-align: top;
-  text-align: center;
 
 }
 
 header {
   display: flex;
   flex-flow: column-reverse nowrap;
+
   }
 
 header nav a {
-  font-size: 10px;
+  font-size: 20px;
   color: gray;
   text-decoration: none;
   border-top: gray solid 2px;
@@ -209,6 +210,7 @@ header nav a:first-child {
 
 header nav a:last-child {
   margin-right: 0;
+  border-bottom: gray solid 2px;
 }
 
 header .logo_div {
@@ -270,6 +272,7 @@ header .logo_div {
 .bottom-content {
     border-top: 2px solid black;
     padding-top: 39px;
+    margin: 0 auto;
 
 }
 
@@ -395,4 +398,27 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+
+@media (min-device-width : 768px) {
+/* Styles */
+    header nav {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: none;
+    }
+    header nav a {
+      margin-right: 65px;
+      font-size: 20px;
+      color: gray;
+      text-decoration: none;
+      border-top: none;
+
+    }
+
+    header nav a:last-child {
+      border-bottom: none;
+    }
 }
