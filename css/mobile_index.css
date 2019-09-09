@@ -451,7 +451,6 @@ footer {
 
     .main-content .top-content .text-content {
       width: 100%;
-      font-size: 
     }
     .main-content .bottom-content {
       margin-top: 1%;
@@ -491,6 +490,29 @@ footer {
     .services-top-text {
     text-align: left;
 }
+    .services-info-img {
+        width: auto;
+        height: auto;
+    }
+    .bottom-content .services-content .text-content {
+        width: 50%;
+        text-align: justify;
+
+    }
+
+    .bottom-content .services-content {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+    }
+    .services-info-img {
+        width: 50%;
+        height: 50%;
+
+    }
+
+
+
 
 
 
@@ -567,7 +589,23 @@ footer {
     }
 
     .main-content .services-content {
-        width: 100%;
+        width: 90%;
     }
+
+    .bottom-content .services-content .text-content {
+        width: 48%;
+        text-align: justify;
+    }
+    .services-content ul {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .services-info-img {
+        width: auto;
+        height: auto;
+    }
+
+
 
  }
