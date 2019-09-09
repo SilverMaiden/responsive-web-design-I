@@ -222,16 +222,6 @@ header nav a:last-child {
     margin: 0 auto;
  }
 
-.services-header-img {
-    /*Sets witdth of header image in services.html*/
-    width: 100%;
-}
-
-.services-top-text {
-    padding: 5%;
-    text-align: center;
-}
-
 /* cta */
 .cta {
   display: flex;
@@ -279,86 +269,6 @@ header nav a:last-child {
     margin: 0 auto;
 
 }
-
-.bottom-content .services-content {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column nowrap;
-}
-
-.bottom-content .services-content .text-content {
-    height: 25%;
-    text-align: center;
-
-}
-
-
-.services-info-img {
-    height: 25%;
-}
-
-.main-content .services-content {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    /* This width changes the size of the different services boxes*/
-    width: 66%;
-    margin: 0 auto;
-}
-
-.services-content ul {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-
-.main-content .services-content .text-content {
-    text-align: center;
-    background: #F5F5F5;
-    /* This changes the width of .text-content to be
-     * just under half the size of the page,
-     * allowing 2 columns of flex boxes to be stacked.
-    /* width: 48%; */
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    line-height: 120%;
-    margin-bottom: 5%;
-}
-
-
-.main-content .services-content .text-content .btn {
-    border-radius: 5px;
-    border-color: black;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.main-content .vision-content {
-    display: flex;
-    flex-flow: wrap;
-    margin-top: 20px;
-    justify-content: space-between;
-    align-content: space-between;
-}
-
-.main-content .vision-content .text-content {
-    text-align: justify;
-    padding: 15px;
-    max-width: 50%;
-    line-height: 140%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    max-height: 440px;
-
-}
-
 
 .main-content .top-content {
   width: 100%;
@@ -418,6 +328,97 @@ footer {
   font-size: 14px;
 }
 
+/***** SERVICES CSS ******
+
+.services-header-img {
+    /*Sets witdth of header image in services.html
+    width: 100%;
+}
+
+.services-top-text {
+    padding: 5%;
+    text-align: center;
+}
+.bottom-content .services-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.bottom-content .services-content .text-content {
+    height: 25%;
+    text-align: center;
+
+}
+
+
+.services-info-img {
+    height: 25%;
+}
+
+.main-content .services-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* This width changes the size of the different services boxes
+    width: 66%;
+    margin: 0 auto;
+}
+
+
+.services-content ul {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.main-content .services-content .text-content {
+    text-align: center;
+    background: #F5F5F5;
+    /* This changes the width of .text-content to be
+     * just under half the size of the page,
+     * allowing 2 columns of flex boxes to be stacked.
+    /* width: 48%; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 120%;
+    margin-bottom: 5%;
+}
+
+
+.main-content .services-content .text-content .btn {
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-content .vision-content {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.main-content .vision-content .text-content {
+    text-align: justify;
+    padding: 15px;
+    max-width: 50%;
+    line-height: 140%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-height: 440px;
+
+}*/
+
 
 
 @media screen and (min-device-width : 500px) {
@@ -443,6 +444,7 @@ footer {
 
     /*INDEX.HTML STYLES */
     .main-content .top-content {
+      padding: 0 10px;
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
