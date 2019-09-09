@@ -215,13 +215,22 @@ header nav a:last-child {
   border-bottom: gray solid 2px;
 }
 
-     header img {
-         width: 25%;
-         padding-top: 5%;
-         padding-bottom: 5%;
-        margin: 0 auto;
-     }
+ header img {
+     width: 25%;
+     padding-top: 5%;
+     padding-bottom: 5%;
+    margin: 0 auto;
+ }
 
+.services-header-img {
+    /*Sets witdth of header image in services.html*/
+    width: 100%;
+}
+
+.services-top-text {
+    padding: 5%;
+    text-align: center;
+}
 
 /* cta */
 .cta {
@@ -274,27 +283,43 @@ header nav a:last-child {
 .bottom-content .services-content {
     display: flex;
     justify-content: space-between;
+    flex-flow: column nowrap;
 }
 
 .bottom-content .services-content .text-content {
-    width: 48%;
-    text-align: justify;
+    height: 25%;
+    text-align: center;
 
 }
 
 
+.services-info-img {
+    height: 25%;
+}
 
 .main-content .services-content {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
     align-content: space-between;
+    /* This width changes the size of the different services boxes*/
+    width: 66%;
+    margin: 0 auto;
+}
+
+.services-content ul {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 .main-content .services-content .text-content {
-    text-align: justify;
+    text-align: center;
     background: #F5F5F5;
-    width: 48%;
+    /* This changes the width of .text-content to be
+     * just under half the size of the page,
+     * allowing 2 columns of flex boxes to be stacked.
+    /* width: 48%; */
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -303,7 +328,7 @@ header nav a:last-child {
     padding-right: 25px;
     padding-left: 25px;
     line-height: 120%;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
 }
 
 
@@ -336,7 +361,7 @@ header nav a:last-child {
 
 
 .main-content .top-content {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -395,8 +420,9 @@ footer {
 
 
 
-@media (min-device-width : 500px) {
+@media screen and (min-device-width : 500px) {
 /* Styles */
+    /* HEADER STYLES */
     header nav {
         flex-flow: row nowrap;
         justify-content: space-evenly;
@@ -414,6 +440,8 @@ footer {
     header nav a:last-child {
       border-bottom: none;
     }
+
+    /*INDEX.HTML STYLES */
     .main-content .top-content {
       width: 100%;
       display: flex;
@@ -449,6 +477,7 @@ footer {
       padding-left: 1%;
       padding-right: 1%;
     }
+    /* CONTACT STYLES */
     .contact {
       border-top: 1px solid black;
       padding-top: 5%;
@@ -456,9 +485,18 @@ footer {
       padding-left: 5%;
       padding-right: 5%;
     }
+
+    /****** SERVICES.HTML ******/
+
+    .services-top-text {
+    text-align: left;
 }
 
-@media (min-device-width : 800px) {
+
+
+}
+
+@media screen and (min-device-width : 800px) {
 
 
     .container {
@@ -468,6 +506,7 @@ footer {
     }
 
     /* header */
+    /* HEADER STYLES */
     header nav {
       justify-content: space-around;
       display: flex;
@@ -506,6 +545,7 @@ footer {
          padding-top: 5%;
      }
 
+    /*INDEX.HTML STYLES */
 
     /* cta */
     .cta {
@@ -516,6 +556,18 @@ footer {
     .cta img {
       display: flex;
       margin-top: 69px;
+    }
+
+
+    /***** SERVICES.HTML STYLES *****/
+
+    .main-content .services-content .text-content {
+        width: 48%;
+        text-align: justify;
+    }
+
+    .main-content .services-content {
+        width: 100%;
     }
 
  }
