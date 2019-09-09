@@ -174,23 +174,6 @@ h5 {
 }
 
 /* header */
-@media (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-    .container {
-        width: 480px;
-        margin: 0 auto;
-    }
-
-    header {
-        flex-flow: column nowrap;
-    }
-
-    header nav {
-      display: flex;
-      flex-flow: column nowrap;
-    }
-
-}
 header nav {
   display: flex;
   flex-flow: row nowrap;

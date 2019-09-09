@@ -177,6 +177,13 @@ body {
 
 /* header */
 
+header {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+
+  }
+
+
 header nav {
   display: flex;
   text-align: center;
@@ -185,11 +192,6 @@ header nav {
 
 }
 
-header {
-  display: flex;
-  flex-flow: column-reverse nowrap;
-
-  }
 
 header nav a {
   font-size: 20px;
@@ -213,18 +215,12 @@ header nav a:last-child {
   border-bottom: gray solid 2px;
 }
 
-header .logo_div {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.logo_div .logo {
-    margin-top: 20px;
-    margin-bottom:20px;
-    width: 30%;
-    height: auto;
-}
+     header img {
+         width: 25%;
+         padding-top: 5%;
+         padding-bottom: 5%;
+        margin: 0 auto;
+     }
 
 
 /* cta */
@@ -261,6 +257,7 @@ header .logo_div {
 .cta img {
   display: flex;
   margin-top: 69px;
+  display:none;
 }
 
 .main-content {
@@ -270,8 +267,6 @@ header .logo_div {
 }
 
 .bottom-content {
-    border-top: 2px solid black;
-    padding-top: 39px;
     margin: 0 auto;
 
 }
@@ -359,20 +354,18 @@ header .logo_div {
 
  .middle-img {
   width: 100%;
-  padding: 40px;
-
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .main-content .bottom-content {
-  margin-top: 37px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
 
 .text-content {
-    padding: 40px;
+    padding: 5%;
 }
 
 
@@ -387,7 +380,7 @@ header .logo_div {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+  padding: 5% 5% 0;
 }
 
 .contact p {
@@ -402,16 +395,16 @@ footer {
 
 
 
-@media (min-device-width : 768px) {
+@media (min-device-width : 500px) {
 /* Styles */
     header nav {
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: none;
     }
     header nav a {
-      margin-right: 65px;
-      font-size: 20px;
+      margin-right: 0 auto;
+      font-size: 14px;
       color: gray;
       text-decoration: none;
       border-top: none;
@@ -421,4 +414,108 @@ footer {
     header nav a:last-child {
       border-bottom: none;
     }
+    .main-content .top-content {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+
+    .main-content .top-content .text-content {
+      width: 100%;
+      font-size: 
+    }
+    .main-content .bottom-content {
+      margin-top: 1%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .main-content .bottom-content .text-content {
+      width: 33%;
+      height: 50%;
+    }
+
+    .text-content {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+     .middle-img {
+      width: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    .contact {
+      border-top: 1px solid black;
+      padding-top: 5%;
+      padding-bottom: 0%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 }
+
+@media (min-device-width : 800px) {
+
+
+    .container {
+      width: 880px;
+      /* TB LR */
+      margin: 0 auto;
+    }
+
+    /* header */
+    header nav {
+      justify-content: space-around;
+      display: flex;
+      flex-flow: row nowrap;
+      width: 150%;
+      vertical-align: top;
+      margin-top: 5%;
+    }
+
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+
+    header nav a {
+      font-size: 14px;
+      color: gray;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    header nav a:first-child {
+      margin-left: 0;
+    }
+
+    header nav a:last-child {
+      margin-right: 0;
+    }
+     header img {
+         width: 40%;
+         padding-left: 5%;
+         padding-top: 5%;
+     }
+
+
+    /* cta */
+    .cta {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .cta img {
+      display: flex;
+      margin-top: 69px;
+    }
+
+ }
